@@ -1,55 +1,48 @@
 <!DOCTYPE html>
-
-<html>
-
-<head>
-	<link rel="stylesheet" href="styles.css">
-</head>
-
-<body>
-  <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form Example</title>
+    <title>Dog Adoption Application</title>
 </head>
 <body>
-    <form>
+    <h1>Dog Adoption Application</h1>
+    <form method="POST">
         <!-- Name Field -->
         <label for="name">Name:</label>
-        <input type="text" id="name" name="name" placeholder="Name" required><br><br>
+        <input type="text" id="name" name="name" placeholder="Name" required>
+        <br><br>
 
         <!-- Phone Number Field -->
         <label for="phone">Phone Number:</label>
-        <input type="text" id="phone" name="phone" placeholder="Phone Number" required><br><br>
+        <input type="text" id="phone" name="phone" placeholder="Phone Number" required>
+        <br><br>
 
         <!-- Address Field -->
         <label for="address">Address:</label>
-        <input type="text" id="address" name="address" placeholder="Address" required><br><br>
-
-        <!-- Checkbox for Living with a Dog -->
-		<input type="checkbox" id="checkbox" name="dogCheckbox" value="Have you ever lived with a Dog before?">
-        <label for="checkbox">Have you ever lived with a Dog before?</label>
+        <input type="text" id="address" name="address" placeholder="Address" required>
         <br><br>
 
-        <!-- Multi-Select for Preferred Breeds -->
-        <label for="breeds">Please select your preferred breeds:</label>
-        <select id="breeds" name="breeds" multiple required>
-            <option value="goldenRetriever">Golden Retriever</option>
-            <option value="labrador">Labrador</option>
-            <option value="bulldog">Bulldog</option>
-        </select><br><br>
+        <!-- Lived with a Dog Before Checkbox -->
+        <label>
+            <input type="checkbox" id="checkbox" name="livedWithDog" value="Have you ever lived with a Dog before?">
+            Have you ever lived with a Dog before?
+        </label>
+        <br><br>
+
+        <!-- Preferred Breeds Multi-Select -->
+        <label for="multiSelect">Please select your preferred breeds:</label>
+        <select id="multiSelect" name="breeds" multiple>
+            <option value="Labrador">Labrador</option>
+            <option value="Beagle">Beagle</option>
+            <option value="German Shepherd">German Shepherd</option>
+            <option value="Poodle">Poodle</option>
+            <option value="Bulldog">Bulldog</option>
+        </select>
+        <br><br>
 
         <!-- Submit Button -->
-        <button type="submit" value="Submit" id="submit">Submit</button>
+        <button type="submit">Submit</button>
     </form>
 </body>
-</html>
-
-    <script type="text/javascript" src="./script.js">
-</script>
-
-</body>
-
 </html>
